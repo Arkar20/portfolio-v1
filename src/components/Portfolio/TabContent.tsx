@@ -1,3 +1,4 @@
+import AiChat from "./AiChat";
 import Education from "./Education";
 import Experience from "./Experience";
 import Projects from "./Projects";
@@ -15,6 +16,9 @@ const TabContent: React.FC<TabContentProps> = ({ activeTab }) => {
             return <Education />;
         case "experience":
             return <Experience />;
+        case "ai":
+            return <AiChat />;
+
         default:
             return <Projects />;
     }

@@ -54,6 +54,7 @@ const PortfolioLayout = () => {
                 <div className="border-b border-green-900/30 px-4 sm:px-6 sticky top-0 bg-black/90 backdrop-blur-md z-20">
                     <nav className="flex space-x-4 sm:space-x-8 overflow-x-auto scrollbar-none">
                         {[
+                            { id: "ai", label: "AI" },
                             { id: "projects", label: "Projects" },
                             { id: "experience", label: "Experience" },
                             { id: "education", label: "Education" },
