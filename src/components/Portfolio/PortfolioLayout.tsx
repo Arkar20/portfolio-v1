@@ -14,7 +14,7 @@ const PortfolioLayout = () => {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col lg:flex-row relative overflow-hidden lg:max-w-[1440px] lg:mx-auto">
+        <div className="min-h-screen flex flex-col lg:flex-row relative overflow-hidden ">
             {/* Animated Background Elements */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
                 <div className="absolute top-1/4 left-1/4 w-48 sm:w-64 h-48 sm:h-64 rounded-full bg-green-900/10 blur-[100px] animate-pulse-slow"></div>

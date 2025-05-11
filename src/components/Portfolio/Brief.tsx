@@ -1,8 +1,7 @@
-import { ArrowRight, Download, Mail, MapPin, Phone } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Download, Mail, MapPin, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import React from "react";
 
 const Brief = () => {
     return (
