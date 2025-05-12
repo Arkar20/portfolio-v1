@@ -47,6 +47,7 @@ const Education = () => {
             period: "Apr 2025 - Apr 2028",
             description:
                 "Demonstrated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS.",
+            specializations: [],
         },
         {
             degree: "Certified Kubernetes Application Developer (CKAD)",
@@ -54,6 +55,7 @@ const Education = () => {
             period: "Feb 2025 - Feb 2027",
             description:
                 "Proven proficiency in designing, building, and deploying applications on Kubernetes.",
+            specializations: [],
         },
     ];
 
@@ -136,19 +138,22 @@ const Education = () => {
                             <p className="text-gray-300 text-sm sm:text-base">
                                 {item.description}
                             </p>
-                            {item.specializations && item.specializations && (
-                                <div className="mt-2">
-                                    {item.specializations.map((spec, index) => (
-                                        <Badge
-                                            key={index}
-                                            variant={"outline"}
-                                            className="bg-green-800 border-none mr-2 mb-2"
-                                        >
-                                            {spec}
-                                        </Badge>
-                                    ))}
-                                </div>
-                            )}
+                            {!!item.specializations.length &&
+                                item.specializations && (
+                                    <div className="mt-2">
+                                        {item.specializations.map(
+                                            (spec, index) => (
+                                                <Badge
+                                                    key={index}
+                                                    variant={"outline"}
+                                                    className="bg-green-800 border-none mr-2 mb-2"
+                                                >
+                                                    {spec}
+                                                </Badge>
+                                            )
+                                        )}
+                                    </div>
+                                )}
                         </CardContent>
                     </Card>
                 ))}

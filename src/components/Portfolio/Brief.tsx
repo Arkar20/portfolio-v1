@@ -1,5 +1,19 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Download, Mail, MapPin, Phone } from "lucide-react";
+import {
+    Code,
+    Download,
+    Github,
+    Linkedin,
+    Mail,
+    MapPin,
+    Phone,
+} from "lucide-react";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "../ui/tooltip";
 
 import { Button } from "@/components/ui/button";
 
@@ -124,6 +138,77 @@ const Brief = () => {
                         <MapPin className="text-green-500 h-5 w-5" />
                         <span className="text-white/90">San Francisco, CA</span>
                     </div>
+                </div>
+            </div>
+
+            {/* Social Links */}
+            <div className="pt-4 border-t border-green-900/30  mt-4">
+                <h3 className="text-gradient-green text-lg font-medium mb-4">
+                    Connect With Me
+                </h3>
+                <div className="flex items-center gap-4">
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <a
+                                    href="https://www.linkedin.com/in/ar-kar-53754421b/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group"
+                                >
+                                    <div className="relative p-2">
+                                        <div className="absolute inset-0 bg-green-900/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                                        <Linkedin className="h-6 w-6 text-white/80 group-hover:text-green-500 transition-colors" />
+                                    </div>
+                                </a>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>LinkedIn Profile</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
+
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <a
+                                    href="https://github.com/Arkar20"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group"
+                                >
+                                    <div className="relative p-2">
+                                        <div className="absolute inset-0 bg-green-900/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                                        <Github className="h-6 w-6 text-white/80 group-hover:text-green-500 transition-colors" />
+                                    </div>
+                                </a>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>GitHub Profile</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
+
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <a
+                                    href="https://leetcode.com/u/Arkar_01/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="group"
+                                >
+                                    <div className="relative p-2">
+                                        <div className="absolute inset-0 bg-green-900/20 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                                        <Code className="h-6 w-6 text-white/80 group-hover:text-green-500 transition-colors" />
+                                    </div>
+                                </a>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p>LeetCode Profile</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
                 </div>
             </div>
         </div>
