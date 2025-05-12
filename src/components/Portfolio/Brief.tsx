@@ -24,7 +24,7 @@ const Brief = () => {
                             <Avatar className="w-32 h-32 border-[3px] border-green-900/50 relative">
                                 <div className="absolute inset-0 bg-green-900/5 rounded-full animate-pulse-slow"></div>
                                 <AvatarImage
-                                    src="/placeholder.svg"
+                                    src="/profile.jpeg"
                                     alt="Profile"
                                 />
                                 <AvatarFallback className="bg-black text-white">
